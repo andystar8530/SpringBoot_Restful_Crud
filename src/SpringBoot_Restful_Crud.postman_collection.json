@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "ed9a1ace-c586-481b-bc0a-2a7dd6c59039",
+		"name": "SpringBoot_Restful_Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SpringBoot_Restful_C",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"customerId\": 9,\r\n        \"name\": \"北投文字I\",\r\n        \"password\": \"Do!ng123\",\r\n        \"email\": \"Do!ng123@gmail.com\",\r\n        \"birthday\": \"1984-05-26\",\r\n        \"lastPostTime\": \"2020-11-26 12:33:38\",\r\n        \"registerTime\": \"2020-11-26 12:33:41\",\r\n        \"totalPayment\": 50000.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpringBoot_Restful_Crud/createCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringBoot_Restful_Crud",
+						"createCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot_Restful_R_All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SpringBoot_Restful_Crud/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringBoot_Restful_Crud",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot_Restful_R_ByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SpringBoot_Restful_Crud/customers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringBoot_Restful_Crud",
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot_Restful_U_ByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"customerId\": 6,\r\n        \"name\": \"北投文字F\",\r\n        \"password\": \"Do!ng456\",\r\n        \"email\": \"Do!ng456@gmail.com\",\r\n        \"birthday\": \"1984-05-26\",\r\n        \"lastPostTime\": \"2020-11-26 12:33:38\",\r\n        \"registerTime\": \"2020-11-26 12:33:41\",\r\n        \"totalPayment\": 50000.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpringBoot_Restful_Crud/UpDataCustomer/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringBoot_Restful_Crud",
+						"UpDataCustomer",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot_Restful_D",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SpringBoot_Restful_Crud/delete/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringBoot_Restful_Crud",
+						"delete",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
