@@ -24,7 +24,7 @@ public class CustomerRestController {
 	// 新增一個客戶
 	@PostMapping("/createCustomer")
 	public CustomerBean createCustomer(@RequestBody CustomerBean customerBean) {
-		customerBean.setPassword(null);
+//		customerBean.setPassword(null);
 		customerService.addMember(customerBean);
 		return customerBean;
 	}
